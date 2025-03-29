@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Bangers", cursive;
+  background-color: #fef6f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("bg.jpg"); /* ✅ Correct format */
+  background-size: cover; /* Optional: scales image to cover full screen */
+  background-position: center; /* Optional: centers the image */
+  background-repeat: no-repeat; /* Optional: prevents tiling */
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bubble-container {
+  position: relative;
+  width: 500%;
+  max-width: 700px;
+  /* height: 350px; */
+  /* background-image: url("./Hand-Drawn-SVG-Message-Bubble.svg"); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-top: 2rem;
+  left:80px;
+  top: -10px;
+}
+
+@media (max-width: 576px) {
+    .bubble-container {
+        position: relative;
+        width: 200%;
+      
+      }
+}
+.quote-text {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  right: 20%;
+  font-size: 1.8rem;
+  color: #000;
+  line-height: 1.4;
+}
+
+.ron-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+ 
+  
+}
+
+button {
+  margin-bottom: 1rem;
+  background-color: #ff3366;
+  color: white;
+  font-family: "Bangers", cursive;
+  font-size: 1.4rem;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e82c5a;
+}
+
+.ron-gif {
+  width: 200px;
+  border-radius: 50%;
+  position: absolute;
+  left: -300px;
+  bottom: 10px;
+}
